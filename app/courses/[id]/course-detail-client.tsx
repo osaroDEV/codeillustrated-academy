@@ -34,7 +34,7 @@ const COURSE_BENEFITS = [
   "Learn industry best practices",
   "Get hands-on coding experience",
   "Understand modern development workflows",
-  "Prepare for technical interviews",
+  // "Prepare for technical interviews",
 ] as const
 
 const fadeInLeft = {
@@ -251,7 +251,7 @@ function CourseSidebar({ course }: { course: CourseDetailClientProps["course"] }
                 size="lg"
                 className="w-full bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600"
               >
-                <DollarSign className="mr-2 h-4 w-4" />
+                {/* <DollarSign className="mr-2 h-4 w-4" /> */}
                 Enroll Now
               </Button>
               <Button

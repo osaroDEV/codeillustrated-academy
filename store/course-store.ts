@@ -42,7 +42,7 @@ interface CourseStore {
   setError: (error: string | null) => void
 }
 
-const MOCK_COURSES: Course[] = [
+const COURSES: Course[] = [
   {
     id: "1",
     title: "Full Stack Web Development",
@@ -183,10 +183,57 @@ const MOCK_COURSES: Course[] = [
     students: 1800,
     image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
+  {
+    id: "7",
+    title: "Figma for Beginners",
+    description: "Master modern DevOps practices with Docker, Kubernetes, and AWS cloud services.",
+    duration: "3 days",
+    type: "crash-course",
+    price: 99,
+    level: "advanced",
+    technologies: ["Figma", "VSCode"],
+    syllabus: [
+      "Introduction to Figma",
+      "Create Designs",
+      "Design Systems",
+      "Build Prototypes",
+      "Prepare for Handoff",
+      "Dev Mode",
+      "Figma for VS Code",
+    ],
+    instructor: "Osaro Onaiwu",
+    rating: 4.8,
+    students: 230,
+    image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: "8",
+    title: "React Native Crash Course",
+    description: "Build cross-platform mobile applications using React Native and deploy to both iOS and Android.",
+    duration: "2 days",
+    type: "crash-course",
+    price: 69,
+    level: "intermediate",
+    technologies: ["React Native", "JavaScript", "Expo", "Firebase"],
+    syllabus: [
+      "Introduction to React Native",
+      "Working with React Native",
+      "Environment Setup",
+      "Exploring Components",
+      "Building Applications",
+      "Push Notifications",
+      "Font Styling and Detectors",
+      "Debugging and Developer Tools",
+    ],
+    instructor: "Osaro Onaiwu",
+    rating: 4.6,
+    students: 90,
+    image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
 ]
 
 export const useCourseStore = create<CourseStore>((set, get) => ({
-  courses: MOCK_COURSES,
+  courses: COURSES,
   selectedCourse: null,
   isLoading: false,
   error: null,
