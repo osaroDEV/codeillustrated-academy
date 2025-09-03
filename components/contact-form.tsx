@@ -213,7 +213,7 @@ export function ContactForm() {
                             </FormControl>
                             <SelectContent>
                               <SelectItem value="full-stack">Full Stack Web Development</SelectItem>
-                              <SelectItem value="python">Python for Data Science</SelectItem>
+                              <SelectItem value="ux">User Experience (UX) Masterclass</SelectItem>
                               <SelectItem value="react">React Crash Course</SelectItem>
                               <SelectItem value="mobile">Mobile App Development</SelectItem>
                               <SelectItem value="devops">DevOps & Cloud Computing</SelectItem>

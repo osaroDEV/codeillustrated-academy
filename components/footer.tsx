@@ -9,7 +9,7 @@ export function Footer() {
   const footerLinks = {
     courses: [
       { label: 'Full Stack Development', href: '/courses/1' },
-      { label: 'Python Data Science', href: '/courses/2' },
+      { label: 'User Experience (UX) Masterclass', href: '/courses/2' },
       { label: 'React Crash Course', href: '/courses/3' },
       { label: 'Mobile Development', href: '/courses/4' },
     ],

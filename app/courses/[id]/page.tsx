@@ -3,13 +3,14 @@ import { CourseDetailClient } from "./course-detail-client"
 import { notFound } from "next/navigation"
 
 interface CourseDetailPageProps {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }
 
 const { courses } = useCourseStore.getState()
 
-export default function CourseDetailPage({ params }: CourseDetailPageProps) {
-  const course = courses.find((c) => c.id === params.id)
+export default async function CourseDetailPage({ params }: CourseDetailPageProps) {
+  const { id } = await params
+  const course = courses.find((c) => c.id === id)
 
   if (!course) {
     notFound()
@@ -25,7 +26,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: CourseDetailPageProps) {
-  const course = courses.find((c) => c.id === params.id)
+  const { id } = await params
+  const course = courses.find((c) => c.id === id)
 
   if (!course) {
     return {
