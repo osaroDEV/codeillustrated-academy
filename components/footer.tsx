@@ -144,7 +144,6 @@ export function Footer() {
             </div>
           </motion.div>
         </div>
- 7405 556 221
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
