@@ -135,7 +135,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-red-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+44 7405 556 221</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-red-400" />
@@ -144,7 +144,7 @@ export function Footer() {
             </div>
           </motion.div>
         </div>
-
+ 7405 556 221
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

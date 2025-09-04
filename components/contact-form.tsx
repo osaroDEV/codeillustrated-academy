@@ -60,7 +60,7 @@ export function ContactForm() {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
+      value: '+44 7405 556 221',
       href: 'tel:+15551234567'
     },
     {
