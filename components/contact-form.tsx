@@ -61,7 +61,7 @@ export function ContactForm() {
       icon: Phone,
       title: 'Phone',
       value: '+44 7405 556 221',
-      href: 'tel:+15551234567'
+      href: 'tel:+44 7405 556 221'
     },
     {
       icon: MapPin,
@@ -218,7 +218,7 @@ export function ContactForm() {
                               <SelectItem value="mobile">Mobile App Development</SelectItem>
                               <SelectItem value="devops">DevOps & Cloud Computing</SelectItem>
                               <SelectItem value="javascript">JavaScript Fundamentals</SelectItem>
-                              <SelectItem value="other">Other / General Inquiry</SelectItem>
+                              <SelectItem value="other">Other/General Inquiry</SelectItem>
                             </SelectContent>
                           </Select>
                           <FormMessage />

@@ -14,14 +14,14 @@ export function Footer() {
       { label: 'Mobile Development', href: '/courses/4' },
     ],
     company: [
-      { label: 'About Us', href: '/about' },
+      { label: 'About Us', href: '/about-us' },
       { label: 'Our Instructors', href: '/instructors' },
       { label: 'Success Stories', href: '/success-stories' },
       { label: 'Blog', href: '/blog' },
     ],
     support: [
       { label: 'Help Center', href: '/help' },
-      { label: 'Contact Us', href: '/contact' },
+      { label: 'Contact Us', href: '/contact-us' },
       { label: 'Privacy Policy', href: '/privacy' },
       { label: 'Terms of Service', href: '/terms' },
     ],

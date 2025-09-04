@@ -1,8 +1,6 @@
 "use client"
 
 import { motion } from 'framer-motion';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
 import { CourseCard } from '@/components/course-card';
 import { useCourseStore } from '@/store/course-store';
 import { Button } from '@/components/ui/button';
@@ -48,8 +46,6 @@ export default function CoursesPage() {
 
   return (
     <main className="min-h-screen">
-      <Header />
-      
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-background via-background to-red-50/20 dark:to-red-950/20 py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -136,8 +132,6 @@ export default function CoursesPage() {
           )}
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }
