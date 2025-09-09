@@ -13,7 +13,7 @@ export function HeroSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden  bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -37,7 +37,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight dark:text-white"
               >
                 Master Coding{' '}
                 <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
