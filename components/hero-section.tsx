@@ -7,13 +7,13 @@ import Link from 'next/link';
 
 export function HeroSection() {
   const stats = [
-    { icon: Users, label: 'Students Enrolled', value: '10,000+' },
-    { icon: Award, label: 'Completion Rate', value: '95%' },
+    { icon: Users, label: 'Students Enrolled', value: '300+' },
+    { icon: Award, label: 'Completion Rate', value: '99%' },
     { icon: Clock, label: 'Hours of Content', value: '500+' },
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-red-50/20 dark:to-red-950/20">
+    <section className="relative overflow-hidden  bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}

@@ -14,10 +14,9 @@ export function Footer() {
       { label: 'Mobile Development', href: '/courses/4' },
     ],
     company: [
+      { label: 'Our Courses', href: '/courses' },
       { label: 'About Us', href: '/about-us' },
-      { label: 'Our Instructors', href: '/instructors' },
-      { label: 'Success Stories', href: '/success-stories' },
-      { label: 'Blog', href: '/blog' },
+      { label: 'Contact Us', href: '/contact-us' },
     ],
     support: [
       { label: 'Help Center', href: '/help' },
@@ -98,14 +97,14 @@ export function Footer() {
             </ul>
           </motion.div>
 
-          {/* Company */}
+          {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>

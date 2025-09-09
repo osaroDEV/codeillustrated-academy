@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { ThemeToggle } from '@/components/theme-toggle';
+// import { ThemeToggle } from '@/components/theme-toggle';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,7 +58,7 @@ export function Header() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <Button
               asChild
               className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600"
@@ -69,7 +69,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <div className="flex items-center space-x-2 md:hidden">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <Button
               variant="ghost"
               size="sm"

@@ -3,10 +3,10 @@ import { Code, Users, Award, Zap, BookOpen, Target, Heart, Star } from 'lucide-r
 
 export default function AboutUs() {
   const stats = [
-    { number: '10K+', label: 'Students Taught' },
-    { number: '95%', label: 'Job Placement Rate' },
-    { number: '50+', label: 'Expert Instructors' },
-    { number: '4.9/5', label: 'Student Rating' }
+    { number: '300+', label: 'Students Taught' },
+    { number: '92%', label: 'Job Placement Rate' },
+    { number: '10+', label: 'Expert Instructors' },
+    { number: '4.6/5', label: 'Student Rating' }
   ];
 
   const courses = [
@@ -39,9 +39,9 @@ export default function AboutUs() {
   ];
 
   const team = [
-    { name: 'Sarah Chen', role: 'Founder & CEO', experience: '15+ years at Google, Meta' },
-    { name: 'Marcus Rodriguez', role: 'Head of Curriculum', experience: '12+ years full-stack development' },
-    { name: 'Emily Johnson', role: 'UI/UX Director', experience: 'Former design lead at Airbnb' },
+    { name: 'Osaro Onaiwu', role: 'Founder & CEO', experience: '5+ years Software Engineer' },
+    { name: 'Sylvia Agbor', role: 'Head of Communications', experience: '6+ years Writer & SM Manager' },
+    { name: 'Favour Utulu', role: 'UI/UX Director', experience: '4+ years UI/UX Designer' },
     { name: 'David Kim', role: 'Career Success Manager', experience: '10+ years in tech recruitment' }
   ];
 
@@ -54,10 +54,10 @@ export default function AboutUs() {
           <div className="text-center">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-6 py-2 mb-8">
               <Code className="w-5 h-5 text-blue-400" />
-              <span className="text-white font-medium">Transforming Careers Since 2018</span>
+              <span className="text-white font-medium">Transforming Careers Since 2023</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6">
-              About CodeCraft Academy
+              About CodeIllustrated Academy
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               We're on a mission to democratize tech education and bridge the gap between 
@@ -91,7 +91,7 @@ export default function AboutUs() {
               <h2 className="text-4xl font-bold text-white mb-6">Our Story</h2>
               <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                 <p>
-                  Founded in 2018 by a team of industry veterans who witnessed firsthand 
+                  Founded in 2023 by a team of industry veterans who witnessed firsthand 
                   the growing disconnect between traditional education and the rapidly 
                   evolving tech industry.
                 </p>
@@ -99,12 +99,10 @@ export default function AboutUs() {
                   We started with a simple belief: everyone deserves access to world-class 
                   tech education, regardless of their background or location. What began 
                   as a small cohort of 20 students has grown into a thriving community of 
-                  over 10,000 graduates worldwide.
+                  over 300 graduates worldwide.
                 </p>
                 <p>
-                  Today, our alumni work at top companies like Google, Netflix, Spotify, 
-                  and countless innovative startups, proving that with the right guidance 
-                  and dedication, anyone can build a successful career in tech.
+                  Today, our alumni work at top companies and countless innovative startups, proving that with the right guidance and dedication, anyone can build a successful career in tech.
                 </p>
               </div>
             </div>

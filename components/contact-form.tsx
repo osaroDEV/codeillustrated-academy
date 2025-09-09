@@ -72,7 +72,7 @@ export function ContactForm() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-red-50/30 dark:to-red-950/10">
+    <section className="py-20 bg-gradient-to-br from-purple-600/20 to-blue-600/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

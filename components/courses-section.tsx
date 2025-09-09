@@ -12,7 +12,7 @@ export function CoursesSection() {
   const featuredCourses = courses.slice(0, 3);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-red-50/30 dark:to-red-950/10">
+    <section className="py-20 bg-black/20 backdrop-blur-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
