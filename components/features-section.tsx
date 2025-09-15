@@ -46,10 +46,10 @@ export function FeaturesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Why Choose <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">CodeIllustrated Academy</span>
+          <h2 className="text-3xl text-white sm:text-4xl font-bold mb-4">
+            Why Choose <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">CodeIllustrated</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             We provide everything you need to succeed in your coding journey
           </p>
         </motion.div>

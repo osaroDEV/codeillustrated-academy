@@ -1,8 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -56,10 +54,8 @@ const fadeInUp = {
 export function CourseDetailClient({ course }: CourseDetailClientProps) {
   return (
     <main className="min-h-screen">
-      <Header />
       <HeroSection course={course} />
       <CourseDetailsSection course={course} />
-      <Footer />
     </main>
   )
 }

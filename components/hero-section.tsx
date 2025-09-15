@@ -37,7 +37,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight dark:text-white"
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white"
               >
                 Master Coding{' '}
                 <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
@@ -49,7 +49,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-xl text-muted-foreground max-w-2xl"
+                className="text-xl text-white max-w-2xl"
               >
                 Join thousands of students learning to code through our interactive online courses. 
                 From crash courses to comprehensive programs, we've got you covered.
@@ -93,8 +93,8 @@ export function HeroSection() {
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <stat.icon className="h-6 w-6 mx-auto mb-2 text-red-600" />
-                  <div className="text-2xl font-bold">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-2xl font-bold text-white">{stat.value}</div>
+                  <div className="text-sm text-white">{stat.label}</div>
                 </div>
               ))}
             </motion.div>

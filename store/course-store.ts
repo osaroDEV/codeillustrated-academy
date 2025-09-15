@@ -44,7 +44,7 @@ interface CourseStore {
 
 const COURSES: Course[] = [
   {
-    id: "1",
+    id: "smm",
     title: "Strategic Marketing Masterclass",
     description:
       "2-day program covering digital marketing, SEO, content strategy, and analytics.",
@@ -80,7 +80,7 @@ const COURSES: Course[] = [
     image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: "2",
+    id: "sas",
     title: "Statistical Analysis with SAS",
     description: "Comprehensive 3-day program covering SAS programming fundamentals, data manipulation, statistical analysis, and advanced analytics including data mining and machine learning techniques.",
     duration: "3 days",
@@ -118,7 +118,7 @@ const COURSES: Course[] = [
     image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: "3",
+    id: "react",
     title: "React Crash Course",
     description: "Intensive 5-day bootcamp to master React fundamentals and build your first application.",
     duration: "5 days",
@@ -140,7 +140,7 @@ const COURSES: Course[] = [
     image: "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: "3",
+    id: "html-intro",
     title: "Introduction to HTML",
     description: "Intensive 3-day bootcamp to master HTML fundamentals and build your first application.",
     duration: "3 days",
@@ -177,47 +177,14 @@ const COURSES: Course[] = [
     image: "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: "4",
-    title: "Mobile App Development with React Native",
-    description: "Build cross-platform mobile applications using React Native and deploy to both iOS and Android.",
-    duration: "10 weeks",
-    type: "extended",
-    price: 799,
-    level: "intermediate",
-    technologies: ["React Native", "JavaScript", "Expo", "Firebase"],
-    syllabus: [
-      "React Native Fundamentals",
-      "Navigation & Routing",
-      "Native Components",
-      "State Management",
-      "API Integration",
-      "Push Notifications",
-      "App Store Deployment",
-      "Performance Optimization",
-    ],
-    instructor: "Osaro Onaiwu",
-    rating: 4.6,
-    students: 750,
-    image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    id: "5",
+    id: "js-jq",
     title: "Javascript & jQuery Masterclass",
     description: "",
     duration: "3 days",
     type: "extended",
     price: 649,
     level: "advanced",
-    technologies: ["JavaScript",
-  "jQuery",
-  "HTML5",
-  "CSS3",
-  "DOM API",
-  "AJAX",
-  "JSON",
-  "ES6+",
-  "Visual Studio Code",
-  "Chrome DevTools",],
+    technologies: ["JavaScript", "jQuery", "HTML5", "CSS3", "DOM API", "AJAX", "JSON", "ES6+", "Visual Studio Code", "Chrome DevTools"],
     syllabus: [
       "Introduction to JavaScript",
       "JavaScript Variables",
@@ -237,7 +204,7 @@ const COURSES: Course[] = [
     image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: "6",
+    id: "js",
     title: "JavaScript for Beginners",
     description: "Intensive 3-day course covering JavaScript essentials for absolute beginners.",
     duration: "3 days",
@@ -260,7 +227,7 @@ const COURSES: Course[] = [
     image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: "7",
+    id: "figma",
     title: "Figma for Beginners",
     description: "Master modern DevOps practices with Docker, Kubernetes, and AWS cloud services.",
     duration: "3 days",
@@ -283,7 +250,7 @@ const COURSES: Course[] = [
     image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: "8",
+    id: "react-native",
     title: "React Native Crash Course",
     description: "Build cross-platform mobile applications using React Native and deploy to both iOS and Android.",
     duration: "2 days",

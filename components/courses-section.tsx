@@ -20,10 +20,10 @@ export function CoursesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl text-white font-bold mb-4">
             Featured <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">Courses</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Discover our most popular courses designed to take your coding skills to the next level
           </p>
         </motion.div>

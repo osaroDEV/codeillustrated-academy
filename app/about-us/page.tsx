@@ -1,11 +1,10 @@
 import React from 'react';
 import { Code, Users, Award, Zap, BookOpen, Target, Heart, Star } from 'lucide-react';
-import Link from 'next/link';
 
 export default function AboutUs() {
   const stats = [
     { number: '300+', label: 'Students Taught' },
-    { number: '92%', label: 'Job Placement Rate' },
+    { number: '250+', label: 'Course Hours' },
     { number: '10+', label: 'Expert Instructors' },
     { number: '4.6/5', label: 'Student Rating' }
   ];
@@ -58,7 +57,7 @@ export default function AboutUs() {
               <span className="text-white font-medium">Transforming Careers Since 2023</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6">
-              About CodeIllustrated Academy
+              About CodeIllustrated
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               We're on a mission to democratize tech education and bridge the gap between 
@@ -209,12 +208,12 @@ export default function AboutUs() {
               Join thousands of successful graduates who transformed their careers with our expert-led courses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href='/courses' className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
+              <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
                 Explore Courses
-              </Link>
-              <Link href='/contact-us' className="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
+              </button>
+              <button className="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
                 Talk to Advisor
-              </Link>
+              </button>
             </div>
           </div>
         </div>

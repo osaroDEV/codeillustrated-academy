@@ -72,7 +72,7 @@ export function ContactForm() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-600/20 to-blue-600/20">
+    <section className="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,10 +80,10 @@ export function ContactForm() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-3xl text-white sm:text-4xl font-bold mb-4">
             Get in <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Ready to start your coding journey? Contact us for more information about our courses.
           </p>
         </motion.div>
@@ -97,7 +97,7 @@ export function ContactForm() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-white">Contact Information</h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <motion.div
@@ -112,16 +112,16 @@ export function ContactForm() {
                       <info.icon className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-medium">{info.title}</h4>
+                      <h4 className="font-medium text-white">{info.title}</h4>
                       {info.href ? (
                         <a 
                           href={info.href}
-                          className="text-muted-foreground hover:text-red-600 transition-colors"
+                          className="text-white hover:text-red-600 transition-colors"
                         >
                           {info.value}
                         </a>
                       ) : (
-                        <p className="text-muted-foreground">{info.value}</p>
+                        <p className="text-white">{info.value}</p>
                       )}
                     </div>
                   </motion.div>

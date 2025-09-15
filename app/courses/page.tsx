@@ -47,17 +47,17 @@ export default function CoursesPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background via-background to-red-50/20 dark:to-red-950/20 py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+            <h1 className="text-4xl text-white sm:text-5xl font-bold mb-4">
               All <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">Courses</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Explore our comprehensive collection of coding courses designed for all skill levels
             </p>
           </motion.div>

@@ -30,13 +30,13 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/code-ill.svg"
-              alt="CodeIllustrated Academy"
+              alt="CodeIllustrated Online School"
               width={40}
               height={40}
               className="h-10 w-10"
             />
             <span className="hidden sm:block lg:text-xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
-              CodeIllustrated Academy
+              CodeIllustrated Online School
             </span>
             <span className="sm:hidden text-xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
               CodeIllustrated
