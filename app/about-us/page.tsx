@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code, Users, Award, Zap, BookOpen, Target, Heart, Star } from 'lucide-react';
+import Link from 'next/link';
 
 export default function AboutUs() {
   const stats = [
@@ -208,12 +209,12 @@ export default function AboutUs() {
               Join thousands of successful graduates who transformed their careers with our expert-led courses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
+              <Link href='/courses' className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
                 Explore Courses
-              </button>
-              <button className="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
+              </Link>
+              <Link href='/contact-us' className="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
                 Talk to Advisor
-              </button>
+              </Link>
             </div>
           </div>
         </div>
