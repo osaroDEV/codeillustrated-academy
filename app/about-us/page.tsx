@@ -1,4 +1,7 @@
+"use client"
+
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Code, Users, Award, Zap, BookOpen, Target, Heart, Star } from 'lucide-react';
 
 export default function AboutUs() {
@@ -51,19 +54,40 @@ export default function AboutUs() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-6 py-2 mb-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-6 py-2 mb-8"
+            >
               <Code className="w-5 h-5 text-blue-400" />
               <span className="text-white font-medium">Transforming Careers Since 2023</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6">
-              About CodeIllustrated
+            </motion.div>
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6"
+            >
+              <h1 className="text-4xl text-white sm:text-5xl font-bold mb-4">
+              About <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">CodeIllustrated</span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            >
               We're on a mission to democratize tech education and bridge the gap between 
               learning and landing your dream job in the digital world.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </section>
 
@@ -72,12 +96,18 @@ export default function AboutUs() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center group">
+              <motion.div 
+                key={index} 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="text-center group"
+              >
                 <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 group-hover:border-purple-400/50 transition-all duration-300 group-hover:scale-105">
                   <div className="text-4xl font-bold text-white mb-2">{stat.number}</div>
                   <div className="text-gray-400 font-medium">{stat.label}</div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -87,8 +117,12 @@ export default function AboutUs() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-white mb-6">Our Story</h2>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <h2 className="text-4xl font-bold text-white mb-6">Our <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">Story</span></h2>
               <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                 <p>
                   Founded in 2023 by a team of industry veterans who witnessed firsthand 
@@ -105,8 +139,13 @@ export default function AboutUs() {
                   Today, our alumni work at top companies and countless innovative startups, proving that with the right guidance and dedication, anyone can build a successful career in tech.
                 </p>
               </div>
-            </div>
-            <div className="relative">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="relative"
+            >
               <div className="bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   {courses.slice(0, 4).map((course, index) => (
@@ -121,7 +160,7 @@ export default function AboutUs() {
                   <div className="text-gray-400 text-sm mt-1">Constantly updated curriculum</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -129,15 +168,25 @@ export default function AboutUs() {
       {/* Values Section */}
       <section className="py-20 bg-black/20 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Our Core Values</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">Our Core <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">Values</span></h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               The principles that guide everything we do and shape the learning experience we create.
             </p>
-          </div>
+          </motion.div>
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="group">
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 + 0.2 }}
+                className="group"
+              >
                 <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 group-hover:border-purple-400/50 transition-all duration-300 group-hover:scale-105 h-full">
                   <div className="text-purple-400 mb-6 group-hover:text-purple-300 transition-colors">
                     {value.icon}
@@ -145,7 +194,7 @@ export default function AboutUs() {
                   <h3 className="text-2xl font-bold text-white mb-4">{value.title}</h3>
                   <p className="text-gray-300 leading-relaxed">{value.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -154,20 +203,30 @@ export default function AboutUs() {
       {/* Courses Showcase */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">What We Teach</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">What We <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">Teach</span></h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Industry-relevant courses designed by experts, updated continuously to match current market demands.
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {courses.map((course, index) => (
-              <div key={index} className="group cursor-pointer">
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 + 0.2 }}
+                className="group cursor-pointer"
+              >
                 <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 group-hover:border-purple-400/50 transition-all duration-300 group-hover:scale-105 text-center">
                   <div className="text-4xl mb-4">{course.icon}</div>
                   <div className="text-white font-semibold">{course.name}</div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -176,15 +235,25 @@ export default function AboutUs() {
       {/* Team Section */}
       <section className="py-20 bg-black/20 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Meet Our Leadership</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">Meet Our <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">Leadership</span></h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Industry veterans with decades of combined experience in tech and education.
             </p>
-          </div>
+          </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
-              <div key={index} className="group">
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 + 0.2 }}
+                className="group"
+              >
                 <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 group-hover:border-purple-400/50 transition-all duration-300 group-hover:scale-105 text-center">
                   <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Users className="w-10 h-10 text-white" />
@@ -193,7 +262,7 @@ export default function AboutUs() {
                   <p className="text-purple-400 font-medium mb-3">{member.role}</p>
                   <p className="text-gray-400 text-sm">{member.experience}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -202,8 +271,13 @@ export default function AboutUs() {
       {/* CTA Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-md rounded-3xl p-12 border border-white/10">
-            <h2 className="text-4xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-md rounded-3xl p-12 border border-white/10"
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">Ready to Start Your <span className="bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">Journey?</span></h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Join thousands of successful graduates who transformed their careers with our expert-led courses.
             </p>
@@ -215,7 +289,7 @@ export default function AboutUs() {
                 Talk to Advisor
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>
