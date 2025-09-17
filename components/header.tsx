@@ -63,7 +63,7 @@ export function Header() {
               asChild
               className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600"
             >
-              <Link href="/contact">Get Started</Link>
+              <Link href="/contact-us">Get Started</Link>
             </Button>
           </div>
 
@@ -108,7 +108,7 @@ export function Header() {
                 asChild
                 className="w-full bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600"
               >
-                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/contact-us" onClick={() => setIsMenuOpen(false)}>
                   Get Started
                 </Link>
               </Button>
