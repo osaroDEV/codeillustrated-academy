@@ -128,7 +128,7 @@ function CourseActions({ course }: { course: CourseDetailClientProps["course"] }
     <div className="flex flex-col sm:flex-row gap-4">
       <Button size="lg" className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600">
         <Play className="mr-2 h-4 w-4" />
-        Enroll Now - ${course.price}
+        Enroll Now - £{course.price}
       </Button>
       <Button
         variant="outline"
@@ -242,7 +242,7 @@ function CourseSidebar({ course }: { course: CourseDetailClientProps["course"] }
         <Card className="sticky top-24">
           <CardContent className="p-6">
             <div className="text-center space-y-4">
-              <div className="text-3xl font-bold text-red-600">${course.price}</div>
+              <div className="text-3xl font-bold text-red-600">£{course.price}</div>
               <Button
                 size="lg"
                 className="w-full bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600"

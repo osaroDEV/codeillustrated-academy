@@ -93,7 +93,7 @@ export function CourseCard({ course, index }: CourseCardProps) {
           <div className="w-full space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-2xl font-bold text-red-600">
-                ${course.price}
+                £{course.price}
               </span>
               <span className="text-sm text-muted-foreground">
                 by {course.instructor}
