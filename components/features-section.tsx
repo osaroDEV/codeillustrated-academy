@@ -23,7 +23,7 @@ export function FeaturesSection() {
     {
       icon: Award,
       title: 'Certification',
-      description: 'Earn recognized certificates upon successful completion of courses.'
+      description: 'Earn certificates upon successful completion of courses.'
     },
     {
       icon: Headphones,

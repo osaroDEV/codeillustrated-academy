@@ -60,8 +60,8 @@ export function ContactForm() {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+44 7405 556 221',
-      href: 'tel:+44 7405 556 221'
+      value: '+44 7405 786 279',
+      href: 'tel:+44 7405 786 279'
     },
     {
       icon: MapPin,
@@ -136,7 +136,7 @@ export function ContactForm() {
                 <li>• Interactive live sessions via Zoom</li>
                 <li>• Flexible scheduling options</li>
                 <li>• Comprehensive curriculum</li>
-                <li>• Career support and guidance</li>
+                {/* <li>• Career support and guidance</li> */}
               </ul>
             </div>
           </motion.div>

@@ -8,10 +8,10 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
 export function Footer() {
   const footerLinks = {
     courses: [
-      { label: 'Full Stack Development', href: '/courses/1' },
-      { label: 'User Experience (UX) Masterclass', href: '/courses/2' },
-      { label: 'React Crash Course', href: '/courses/3' },
-      { label: 'Mobile Development', href: '/courses/4' },
+      { label: 'React Crash Course', href: '/courses/react' },
+      { label: 'JavaScript for Beginners', href: '/courses/js' },
+      { label: 'Javascript & jQuery Masterclass', href: '/courses/js-jq' },
+      { label: 'React Native Crash Course', href: '/courses/react-native' },
     ],
     company: [
       { label: 'Our Courses', href: '/courses' },
@@ -134,7 +134,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-red-400" />
-                <span className="text-gray-400">+44 7405 556 221</span>
+                <span className="text-gray-400">+44 7405 786 279</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-red-400" />

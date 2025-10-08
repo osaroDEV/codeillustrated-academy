@@ -136,7 +136,7 @@ function CourseActions({ course }: { course: CourseDetailClientProps["course"] }
         asChild
         className="border-red-200 hover:bg-red-50 dark:border-red-800 dark:hover:bg-red-950/20 bg-transparent"
       >
-        <Link href="/contact">
+        <Link href="/contact-us">
           <Calendar className="mr-2 h-4 w-4" />
           Schedule Demo
         </Link>
