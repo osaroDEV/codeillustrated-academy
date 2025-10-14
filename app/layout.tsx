@@ -1,12 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-// import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/sonner';
 import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { ContactFormPopup } from '@/components/contact-form-popup';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,17 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        {/* <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        > */}
-          <Header />
-          {children}
-          <Footer />
-          <Toaster />
-        {/* </ThemeProvider> */}
+        <Header />
+        {children}
+        <Footer />
+        <ContactFormPopup />
+        <Toaster />
         <Analytics />
         <SpeedInsights />
       </body>

@@ -62,7 +62,7 @@ export function CourseDetailClient({ course }: CourseDetailClientProps) {
 
 function HeroSection({ course }: { course: CourseDetailClientProps["course"] }) {
   return (
-    <section className="bg-gradient-to-br from-background via-background to-red-50/20 dark:to-red-950/20 py-20">
+    <section className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
@@ -85,29 +85,29 @@ function CourseInfo({ course }: { course: CourseDetailClientProps["course"] }) {
         <Badge
           variant={course.type === "crash-course" ? "destructive" : "secondary"}
           className={
-            course.type === "crash-course" ? "bg-red-600 hover:bg-red-700" : "bg-orange-600 hover:bg-orange-700"
+            course.type === "crash-course" ? "bg-red-600 hover:bg-red-700 text-white" : "text-white bg-orange-600 hover:bg-orange-700"
           }
         >
           {course.type === "crash-course" ? "Crash Course" : "Extended Program"}
         </Badge>
-        <Badge variant="outline">{course.level}</Badge>
+        <Badge variant="outline" className="text-white">{course.level}</Badge>
       </div>
 
-      <h1 className="text-4xl sm:text-5xl font-bold text-balance">{course.title}</h1>
-      <p className="text-xl text-muted-foreground text-pretty">{course.description}</p>
+      <h1 className="text-4xl sm:text-5xl font-bold text-balance text-white">{course.title}</h1>
+      <p className="text-xl text-muted-foreground text-pretty text-white">{course.description}</p>
 
-      <div className="flex items-center space-x-6 text-sm">
+      <div className="flex items-center space-x-6 text-sm text-white">
         <div className="flex items-center space-x-1">
           <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
           <span className="font-medium">{course.rating}</span>
-          <span className="text-muted-foreground">rating</span>
+          <span className="text-white">rating</span>
         </div>
         <div className="flex items-center space-x-1">
-          <Users className="h-4 w-4 text-muted-foreground" />
+          <Users className="h-4 w-4 text-white" />
           <span>{course.students.toLocaleString()} students</span>
         </div>
         <div className="flex items-center space-x-1">
-          <Clock className="h-4 w-4 text-muted-foreground" />
+          <Clock className="h-4 w-4 text-white" />
           <span>{course.duration}</span>
         </div>
       </div>
@@ -134,11 +134,11 @@ function CourseActions({ course }: { course: CourseDetailClientProps["course"] }
         variant="outline"
         size="lg"
         asChild
-        className="border-red-200 hover:bg-red-50 dark:border-red-800 dark:hover:bg-red-950/20 bg-transparent"
+        className="border-red-200 hover:bg-red-50 dark:border-red-800 dark:hover:bg-red-950/20 bg-transparent group"
       >
         <Link href="/contact-us">
-          <Calendar className="mr-2 h-4 w-4" />
-          Schedule Demo
+          <Calendar className="mr-2 h-4 w-4 text-white group-hover:text-black" />
+          <span className="text-white group-hover:text-black">Schedule Demo</span>
         </Link>
       </Button>
     </div>
@@ -160,7 +160,7 @@ function CourseImage({ course }: { course: CourseDetailClientProps["course"] }) 
 
 function CourseDetailsSection({ course }: { course: CourseDetailClientProps["course"] }) {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2 space-y-12">
