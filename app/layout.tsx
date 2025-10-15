@@ -13,6 +13,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'CodeIllustrated Online School - Learn Coding Online',
   description: 'Master coding through our interactive online courses. From crash courses to comprehensive programs.',
+  icons: {
+    icon: "/code-ill.svg",
+  },
 };
 
 export default function RootLayout({
