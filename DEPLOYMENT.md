@@ -15,31 +15,57 @@ Each app is configured with appropriate base paths:
 - Academy: Base path `/academy`
 - Labs: Base path `/labs`
 
+## Important: Deploy Each App Separately
+
+**You must deploy each app as a separate project.** Deployment platforms expect a single app per deployment, not a monorepo.
+
 ## Deployment Options
 
 ### Option 1: Vercel (Recommended for Next.js)
 
-Deploy each app as a separate Vercel project and use Vercel's rewrites:
+**Step 1: Deploy Each App Separately**
 
-1. Create three separate projects on Vercel
-2. Link each to the respective app directory
-3. Use Vercel's `vercel.json` rewrite rules to route paths appropriately
+For each app (root, academy, labs):
 
-Example `vercel.json` in root:
+1. Create a new project on Vercel
+2. Import your repository
+3. Set the **Root Directory** to:
+   - For Root app: `apps/root`
+   - For Academy app: `apps/academy`
+   - For Labs app: `apps/labs`
+4. Vercel will auto-detect Next.js and configure build settings
+5. Deploy
+
+**Step 2: Configure Custom Domain Routing**
+
+On your main domain (www.codeillustrated.com):
+
+1. Point the root domain to the **Root** Vercel project
+2. Add a `vercel.json` file to your Root project:
+
 ```json
 {
   "rewrites": [
     {
       "source": "/academy/:path*",
-      "destination": "https://academy.vercel.app/academy/:path*"
+      "destination": "https://your-academy-project.vercel.app/academy/:path*"
     },
     {
       "source": "/labs/:path*",
-      "destination": "https://labs.vercel.app/labs/:path*"
+      "destination": "https://your-labs-project.vercel.app/labs/:path*"
     }
   ]
 }
 ```
+
+Replace the destination URLs with your actual Vercel project URLs.
+
+**Alternative: Use Vercel's Monorepo Support**
+
+Vercel has built-in monorepo support. For each deployment:
+- Set Root Directory to the app folder
+- Build Command: `cd ../.. && npm run build:[app-name]`
+- Output Directory: `.next` or `out`
 
 ### Option 2: Nginx Reverse Proxy
 

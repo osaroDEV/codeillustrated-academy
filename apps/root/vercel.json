@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "out",
+  "rewrites": [
+    {
+      "source": "/academy/:path*",
+      "destination": "/academy/:path*"
+    },
+    {
+      "source": "/labs/:path*",
+      "destination": "/labs/:path*"
+    }
+  ]
+}
