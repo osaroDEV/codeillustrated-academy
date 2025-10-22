@@ -1,4 +1,4 @@
-// File: /tmp/cc-agent/59029908/project/apps/labs/app/layout.tsx
+// File: C:\Users\osaroDEV\Documents\saas\cia\apps\labs\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
