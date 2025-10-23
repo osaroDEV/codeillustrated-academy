@@ -29,12 +29,20 @@ For each app (root, academy, labs):
 
 1. Create a new project on Vercel
 2. Import your repository
-3. Set the **Root Directory** to:
+3. **CRITICAL:** In project settings, set the **Root Directory** to:
    - For Root app: `apps/root`
    - For Academy app: `apps/academy`
    - For Labs app: `apps/labs`
-4. Vercel will auto-detect Next.js and configure build settings
+
+   **This is mandatory!** Without setting the Root Directory, Vercel will look at the monorepo root and fail to find Next.js.
+
+4. Vercel will auto-detect Next.js and configure build settings automatically
 5. Deploy
+
+**Troubleshooting:**
+- If you get "No Next.js version detected" error, verify the Root Directory is set correctly
+- The Root Directory should point to the specific app folder, not the monorepo root
+- After changing Root Directory, you may need to redeploy
 
 **Step 2: Configure Custom Domain Routing**
 
