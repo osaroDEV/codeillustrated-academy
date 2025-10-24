@@ -59,7 +59,7 @@ export function ContactForm() {
     },
     {
       icon: Phone,
-      title: 'Phone',
+      title: 'WhatsApp',
       value: '+44 7405 786 279',
       href: 'tel:+44 7405 786 279'
     },
