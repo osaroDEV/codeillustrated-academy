@@ -1,59 +1,104 @@
-# Code Illustrated Monorepo
+# Code Illustrated
 
-This is a monorepo containing multiple Next.js applications for the Code Illustrated platform.
+A comprehensive platform for learning programming through visual illustrations and hands-on practice.
 
-## Structure
+## Project Structure
 
-```
-/
-├── apps/
-│   ├── root/        # Main landing page (www.codeillustrated.com)
-│   ├── academy/     # Academy app (www.codeillustrated.com/academy)
-│   └── labs/        # Labs app (www.codeillustrated.com/labs)
-└── package.json     # Root workspace configuration
-```
+This is a single Next.js application with multiple route groups:
 
-## Development
+- **/** - Landing page (root)
+- **/academy** - Course platform with educational content
+- **/labs** - Interactive coding labs and exercises
 
-### Run individual apps:
+## Getting Started
 
-```bash
-npm run dev              # Run root landing page on port 3000
-npm run dev:academy      # Run academy on port 3001
-npm run dev:labs         # Run labs on port 3002
-npm run dev:all          # Run all apps simultaneously
-```
+### Prerequisites
 
-### Build:
+- Node.js 18+ or higher
+- npm or pnpm package manager
+
+### Installation
 
 ```bash
-npm run build            # Build all apps
-npm run build:root       # Build root only
-npm run build:academy    # Build academy only
-npm run build:labs       # Build labs only
+# Install dependencies
+npm install
+# or
+pnpm install
 ```
 
-### Start production:
+### Development
 
 ```bash
-npm run start            # Start root
-npm run start:academy    # Start academy
-npm run start:labs       # Start labs
+# Start development server
+npm run dev
+# or
+pnpm dev
 ```
 
-## Deployment Notes
+Open [http://localhost:3000](http://localhost:3000) to see the landing page.
+- Academy: [http://localhost:3000/academy](http://localhost:3000/academy)
+- Labs: [http://localhost:3000/labs](http://localhost:3000/labs)
 
-The apps are configured with the following base paths:
-- **Root**: `/` (no base path)
-- **Academy**: `/academy`
-- **Labs**: `/labs`
+### Building for Production
 
-For deployment on a single domain (www.codeillustrated.com), you'll need to configure your hosting platform to:
-1. Serve the root app at `/`
-2. Serve the academy app at `/academy`
-3. Serve the labs app at `/labs`
+```bash
+# Build the application
+npm run build
+# or
+pnpm build
+```
 
-This can be achieved through:
-- Vercel multi-app configuration
-- Reverse proxy (Nginx, Caddy, etc.)
-- Custom deployment scripts
+### Running Production Build
+
+```bash
+# Start production server
+npm start
+# or
+pnpm start
+```
+
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import your repository in Vercel
+3. Vercel will auto-detect Next.js and deploy
+
+**Important:** Do NOT set a Root Directory in Vercel. This is now a single Next.js app at the root level.
+
+### Other Platforms
+
+This is a standard Next.js application. You can deploy it to any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- Render
+- etc.
+
+## Routes
+
+- `/` - Landing page
+- `/academy` - Course catalog and learning platform
+- `/academy/courses` - Browse all courses
+- `/academy/courses/[id]` - Individual course details
+- `/academy/about-us` - About the academy
+- `/academy/contact-us` - Contact form
+- `/labs` - Interactive coding labs
+
+## Tech Stack
+
+- **Framework:** Next.js 15.3
+- **Styling:** Tailwind CSS
+- **UI Components:** Radix UI
+- **Form Handling:** React Hook Form + Zod
+- **State Management:** Zustand
+- **Animations:** Framer Motion
+
+## Development Notes
+
+- All academy components are in `/components`
+- Academy pages are in `/app/academy`
+- Labs pages are in `/app/labs`
+- Shared utilities in `/lib`
+- Type definitions in TypeScript files

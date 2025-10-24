@@ -6,9 +6,7 @@ settings:
 
 importers:
 
-  .: {}
-
-  apps/academy:
+  .:
     dependencies:
       '@hookform/resolvers':
         specifier: ^3.9.0
@@ -196,120 +194,6 @@ importers:
       zustand:
         specifier: ^4.4.7
         version: 4.5.7(@types/react@18.2.22)(react@18.2.0)
-
-  apps/labs:
-    dependencies:
-      '@types/node':
-        specifier: 20.6.2
-        version: 20.6.2
-      '@types/react':
-        specifier: 18.2.22
-        version: 18.2.22
-      '@types/react-dom':
-        specifier: 18.2.7
-        version: 18.2.7
-      autoprefixer:
-        specifier: 10.4.15
-        version: 10.4.15(postcss@8.4.30)
-      class-variance-authority:
-        specifier: ^0.7.0
-        version: 0.7.1
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      eslint:
-        specifier: 8.49.0
-        version: 8.49.0
-      eslint-config-next:
-        specifier: 13.5.1
-        version: 13.5.1(eslint@8.49.0)(typescript@5.2.2)
-      lucide-react:
-        specifier: ^0.446.0
-        version: 0.446.0(react@18.2.0)
-      next:
-        specifier: 15.3.1
-        version: 15.3.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      next-themes:
-        specifier: ^0.3.0
-        version: 0.3.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      postcss:
-        specifier: 8.4.30
-        version: 8.4.30
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
-      tailwind-merge:
-        specifier: ^2.5.2
-        version: 2.6.0
-      tailwindcss:
-        specifier: 3.3.3
-        version: 3.3.3
-      tailwindcss-animate:
-        specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.3.3)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  apps/root:
-    dependencies:
-      '@types/node':
-        specifier: 20.6.2
-        version: 20.6.2
-      '@types/react':
-        specifier: 18.2.22
-        version: 18.2.22
-      '@types/react-dom':
-        specifier: 18.2.7
-        version: 18.2.7
-      autoprefixer:
-        specifier: 10.4.15
-        version: 10.4.15(postcss@8.4.30)
-      class-variance-authority:
-        specifier: ^0.7.0
-        version: 0.7.1
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      eslint:
-        specifier: 8.49.0
-        version: 8.49.0
-      eslint-config-next:
-        specifier: 13.5.1
-        version: 13.5.1(eslint@8.49.0)(typescript@5.2.2)
-      lucide-react:
-        specifier: ^0.446.0
-        version: 0.446.0(react@18.2.0)
-      next:
-        specifier: 15.3.1
-        version: 15.3.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      next-themes:
-        specifier: ^0.3.0
-        version: 0.3.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      postcss:
-        specifier: 8.4.30
-        version: 8.4.30
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
-      tailwind-merge:
-        specifier: ^2.5.2
-        version: 2.6.0
-      tailwindcss:
-        specifier: 3.3.3
-        version: 3.3.3
-      tailwindcss-animate:
-        specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.3.3)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
 
 packages:
 
@@ -1579,8 +1463,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  baseline-browser-mapping@2.8.19:
-    resolution: {integrity: sha512-zoKGUdu6vb2jd3YOq0nnhEDQVbPcHhco3UImJrv5dSkvxTc2pl2WjOPsjZXDwPDSl5eghIMuY3R6J9NDKF3KcQ==}
+  baseline-browser-mapping@2.8.20:
+    resolution: {integrity: sha512-JMWsdF+O8Orq3EMukbUN1QfbLK9mX2CkUmQBcW2T0s8OmdAUL5LLM/6wFwSrqXzlXB13yhyK9gTKS1rIizOduQ==}
     hasBin: true
 
   binary-extensions@2.3.0:
@@ -1807,8 +1691,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.238:
-    resolution: {integrity: sha512-khBdc+w/Gv+cS8e/Pbnaw/FXcBUeKrRVik9IxfXtgREOWyJhR4tj43n3amkVogJ/yeQUqzkrZcFhtIxIdqmmcQ==}
+  electron-to-chromium@1.5.240:
+    resolution: {integrity: sha512-OBwbZjWgrCOH+g6uJsA2/7Twpas2OlepS9uvByJjR2datRDuKGYeD+nP8lBBks2qnB7bGJNHDUx7c/YLaT3QMQ==}
 
   embla-carousel-react@8.6.0:
     resolution: {integrity: sha512-0/PjqU7geVmo6F734pmPqpyHqiM99olvyecY7zdweCw+6tKEXnrE90pBiBbMMU8s5tICemzpQ3hi5EpxzGW+JA==}
@@ -4362,7 +4246,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  baseline-browser-mapping@2.8.19: {}
+  baseline-browser-mapping@2.8.20: {}
 
   binary-extensions@2.3.0: {}
 
@@ -4381,9 +4265,9 @@ snapshots:
 
   browserslist@4.27.0:
     dependencies:
-      baseline-browser-mapping: 2.8.19
+      baseline-browser-mapping: 2.8.20
       caniuse-lite: 1.0.30001751
-      electron-to-chromium: 1.5.238
+      electron-to-chromium: 1.5.240
       node-releases: 2.0.26
       update-browserslist-db: 1.1.4(browserslist@4.27.0)
 
@@ -4589,7 +4473,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.238: {}
+  electron-to-chromium@1.5.240: {}
 
   embla-carousel-react@8.6.0(react@18.2.0):
     dependencies:
