@@ -7,6 +7,8 @@ export interface Course {
   duration: string
   type: "crash-course" | "extended"
   price: number
+  priceNGN: number
+  priceUSD: number
   level: "beginner" | "intermediate" | "advanced"
   technologies: string[]
   syllabus: string[]
@@ -51,6 +53,8 @@ const COURSES: Course[] = [
     duration: "2 days",
     type: "extended",
     price: 66,
+    priceNGN: 105000,
+    priceUSD: 66,
     level: "intermediate",
     technologies: [ "Google Analytics",
   "Google Ads",
@@ -86,6 +90,8 @@ const COURSES: Course[] = [
     duration: "3 days",
     type: "extended",
     price: 99,
+    priceNGN: 158000,
+    priceUSD: 99,
     level: "beginner",
     technologies: ["SAS",
   "SAS Studio",
@@ -124,6 +130,8 @@ const COURSES: Course[] = [
     duration: "5 days",
     type: "crash-course",
     price: 299,
+    priceNGN: 478000,
+    priceUSD: 299,
     level: "beginner",
     technologies: ["React", "JavaScript", "HTML", "CSS"],
     syllabus: [
@@ -146,6 +154,8 @@ const COURSES: Course[] = [
     duration: "3 days",
     type: "crash-course",
     price: 199,
+    priceNGN: 318000,
+    priceUSD: 199,
     level: "beginner",
     technologies: [ "HTML5",
   "CSS3",
@@ -183,6 +193,8 @@ const COURSES: Course[] = [
     duration: "3 days",
     type: "extended",
     price: 649,
+    priceNGN: 1038000,
+    priceUSD: 649,
     level: "advanced",
     technologies: ["JavaScript", "jQuery", "HTML5", "CSS3", "DOM API", "AJAX", "JSON", "ES6+", "Visual Studio Code", "Chrome DevTools"],
     syllabus: [
@@ -210,6 +222,8 @@ const COURSES: Course[] = [
     duration: "3 days",
     type: "crash-course",
     price: 199,
+    priceNGN: 318000,
+    priceUSD: 199,
     level: "beginner",
     technologies: ["JavaScript", "HTML", "CSS", "DOM"],
     syllabus: [
@@ -233,6 +247,8 @@ const COURSES: Course[] = [
     duration: "3 days",
     type: "crash-course",
     price: 99,
+    priceNGN: 158000,
+    priceUSD: 99,
     level: "advanced",
     technologies: ["Figma", "VSCode"],
     syllabus: [
@@ -256,6 +272,8 @@ const COURSES: Course[] = [
     duration: "2 days",
     type: "crash-course",
     price: 69,
+    priceNGN: 110000,
+    priceUSD: 69,
     level: "intermediate",
     technologies: ["React Native", "JavaScript", "Expo", "Firebase"],
     syllabus: [

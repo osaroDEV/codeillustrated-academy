@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Clock, Users, Star, Award, CheckCircle, Play, Calendar, DollarSign } from "lucide-react"
+import { Price } from "@/components/price"
 import Link from "next/link"
 
 interface CourseDetailClientProps {
@@ -17,6 +18,8 @@ interface CourseDetailClientProps {
     duration: string
     level: "beginner" | "intermediate" | "advanced"
     price: number
+    priceNGN: number
+    priceUSD: number
     rating: number
     students: number
     image: string
@@ -128,7 +131,7 @@ function CourseActions({ course }: { course: CourseDetailClientProps["course"] }
     <div className="flex flex-col sm:flex-row gap-4">
       <Button size="lg" className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600">
         <Play className="mr-2 h-4 w-4" />
-        Enroll Now - £{course.price}
+        Enroll Now - <Price priceNGN={course.priceNGN} priceUSD={course.priceUSD} decimals={0} className="ml-1" />
       </Button>
       <Button
         variant="outline"
